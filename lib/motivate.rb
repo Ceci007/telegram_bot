@@ -1,13 +1,13 @@
 require 'telegram/bot'
 require 'net/http'
 require 'json'
-require_relative 'bot.rb'
+require_relative 'bot'
 
 class Motivate
   @values = nil
 
   def initialize
-    @values = make_the_request
+    @values = request
   end
 
   def request
