@@ -20,6 +20,11 @@ class Bot
         values = Motivate.new
         value = values.random
         bot.api.send_message(chat_id: message.chat.id, text: "#{value['text']}", date: message.date)
+
+      when '/joke'
+        values = Joke.new
+        value = values.request
+        bot.api.send_message(chat_id: message.chat.id, text: "#{value['joke']}", date: message.date)
       end
   end
 end
