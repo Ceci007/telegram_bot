@@ -1,7 +1,7 @@
 require 'telegram/bot'
 require 'net/http'
 require 'json'
-require_relative 'bot'
+require_relative 'bot.rb'
 
 class Joke
   @values = nil
@@ -11,7 +11,7 @@ class Joke
   end
 
   def request
-    url = 'https://api.yomomma.info'
+    url = 'https://api.yomomma.info/'
 
     escaped_address = URI.escape(url)
     uri = URI.parse(escaped_address)

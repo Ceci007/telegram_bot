@@ -1,7 +1,7 @@
 require 'telegram/bot'
 require 'net/http'
 require 'json'
-require_relative 'bot'
+require_relative 'bot.rb'
 
 class Motivate
   @values = nil
