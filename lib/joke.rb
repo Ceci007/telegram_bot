@@ -13,7 +13,7 @@ class Joke
   def request
     url = 'https://api.yomomma.info/'
 
-    escaped_address = URI.escape(url)
+    escaped_address = URI.encode_www_form(url)
     uri = URI.parse(escaped_address)
     response = Net::HTTP.get(uri)
     response = JSON.parse(response)
