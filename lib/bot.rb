@@ -36,8 +36,7 @@ class Bot
 
         else
           bot.api.send_message(chat_id: message.chat.id,
-                               text: "Invalid entry, #{message.from.first_name},"\
-            ' you need to use  /start,  /stop , /motivate or /joke')
+                               text: "Invalid entry, #{message.from.first_name}, you need to use  /start,  /stop , /motivate or /joke")
         end
       end
     end
