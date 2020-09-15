@@ -13,4 +13,17 @@ describe Motivate do
       expect(request_json.length).not_to eql(0)
     end
   end
+
+  describe '#random' do
+    let(:random) { Motivate.new }
+    let(:request_random) { random.random }
+
+    it 'should return an Hash' do
+      expect(request_random.class).to eql(Hash)
+    end
+
+    it 'should return a key and a value' do
+      expect(request_random.length).to eql(2)
+    end
+  end
 end
