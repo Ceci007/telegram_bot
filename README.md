@@ -35,12 +35,13 @@ The Telegram bot I created has four commands:
 ## 🔴 Live Demo
 
 [Live Demo Link](https://repl.it/@CeciBenitez/telegrambot#README.md) 
+
 [Video Demo](https://drive.google.com/file/d/1l8DlGv_qI_eM8o8HHeAqUF_ZZ9qCOwUx/view?usp=sharing)
 
 
 ## 🛠 Getting Started
 ### Install 
-Besides the live demo link, you can run those functions in you own local environment. In order to run, you need to install Ruby in your computer. For windows you can go to [Ruby installer](https://rubyinstaller.org/) and for MAC and LINUX you can go to [Ruby official site](https://www.ruby-lang.org/en/downloads/) for intructions on how to intall it. Then you can clone the project by typing ```git clone https://github.com/Ceci007/Tic-Tac-Toe.git```
+Besides the live demo link, you can run those functions in you own local environment. In order to run, you need to install Ruby in your computer. For windows you can go to [Ruby installer](https://rubyinstaller.org/) and for MAC and LINUX you can go to [Ruby official site](https://www.ruby-lang.org/en/downloads/) for intructions on how to intall it. Then you can clone the project by typing ```git clone https://github.com/Ceci007/telegram_bot.git```
 
 To get a local copy up and running follow these simple example steps.
 
