@@ -23,7 +23,7 @@ describe Motivate do
     end
 
     it 'should return a key and a value' do
-      expect(request_random.length).to eql(2)
+      expect(request_random.size).to eql(2)
     end
   end
 end

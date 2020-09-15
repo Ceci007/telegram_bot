@@ -10,7 +10,7 @@ describe Joke do
     end
 
     it 'returns an array response should not be empty' do
-      expect(request_json.length).not_to eql(0)
+      expect(request_json.size).not_to eql(0)
     end
   end
 end
