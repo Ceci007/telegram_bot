@@ -5,7 +5,7 @@ describe Motivate do
     let(:request) { Motivate.new }
     let(:request_json) { request.request }
 
-    it 'should return json response when the request is sucessful' do
+    it 'should return json response when the request is successful' do
       expect(request_json.class).to eql(Array)
     end
 
