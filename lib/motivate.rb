@@ -23,4 +23,3 @@ class Motivate
     @values
   end
 end
-

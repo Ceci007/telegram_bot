@@ -1,4 +1,6 @@
 # rubocop:disable Metrics/MethodLength
+# rubocop:disable Metrics/AbcSize
+# rubocop:disable Metrics/BlockLength
 
 require 'telegram/bot'
 require_relative 'motivate.rb'
@@ -52,3 +54,5 @@ class Bot
 end
 
 # rubocop:enable Metrics/MethodLength
+# rubocop:enable Metrics/AbcSize
+# rubocop:enable Metrics/BlockLength
