@@ -19,9 +19,13 @@ The Telegram bot I created has four commands:
 
 ![screenshot 4](./app_screens/bot_joke.png)
 
+- ```/news``` : to search for an interesting news.
+
+![screenshot 5](./app_screens/bot_news.png)
+
 - ```/stop``` : to stop the bot.
 
-![screenshot 5](./app_screens/bot_stop.png)
+![screenshot 6](./app_screens/bot_stop.png)
 
 
 ## 🔧 Built With
