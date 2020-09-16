@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-#  🧐 Telegram Bot
+#  🧐  Ceci_bot
 
 This is the capstone project, a solo project from the Ruby module on the Microverse program, it consists of making a Telegram bot.
 
