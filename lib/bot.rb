@@ -33,10 +33,11 @@ class Bot
           values = Joke.new
           value = values.request
           bot.api.send_message(chat_id: message.chat.id, text: value['joke'].to_s, date: message.date)
+
         else
           bot.api.send_message(chat_id: message.chat.id,
                                text: "Invalid entry, #{message.from.first_name},"\
-                               ' you need to use  /start,  /stop , /motivate or /joke')
+                              ' you need to use  /start,  /stop , /motivate or /joke')
         end
       end
     end

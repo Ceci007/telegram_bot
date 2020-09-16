@@ -51,6 +51,19 @@ To get a local copy up and running follow these simple example steps.
 
 Then proceed to create your .env file and create a variable like this one ```API_TOKEN=1318191703:AAHqVe_Vqw4decD1v0Kzj0PE3IEcpK8VY4g``` you can use your token if you request one from the Telegram's BotFather, for this you need to install Telegram on your device.
 
+Steps to request token: 
+- Write the name "BotFather" on your telegram searchbar and send the command ```/start```.
+
+![step 1](./app_screens/botfather_1.png)
+
+- Now you can see a list with all commands and to create a new bot token you send ```/newbot```.
+
+![step 2](./app_screens/botfather_2.png)
+
+- last but not least you name your bot and choose an username.
+
+![step 3](./app_screens/botfather_3.png)
+
 ### Run the bot 
 Open your terminal and type ```ruby bin/main.rb``` in the root file of the project.
 
