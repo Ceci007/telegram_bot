@@ -1,7 +1,7 @@
 require_relative '../lib/bot.rb'
 require_relative '../lib/motivate.rb'
 
-def greeting 
+def greeting
   puts 'Hello!, Welcome to Ceci\'s telegram bot'
   puts '----------------------------------------------'
   puts 'This is a bot to help you stay motivated by giving you motivational quotes'

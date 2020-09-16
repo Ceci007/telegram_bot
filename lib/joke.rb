@@ -6,7 +6,7 @@ require 'json'
 
 class Joke
   @values = nil
-  attr_reader :values 
+  attr_reader :values
 
   def initialize
     @values = @request

@@ -4,7 +4,7 @@ require 'json'
 
 class Motivate
   @values = nil
-  attr_reader :values 
+  attr_reader :values
 
   def initialize
     @values = request
