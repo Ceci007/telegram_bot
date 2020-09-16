@@ -3,6 +3,7 @@
 require 'telegram/bot'
 require_relative 'motivate.rb'
 require_relative 'joke.rb'
+require_relative 'news.rb'
 require 'dotenv'
 Dotenv.load('./.env')
 
@@ -19,7 +20,8 @@ class Bot
               ' the chat bot is to keep you motivated and entertained.'\
               ' Use  /start to start the bot,  /stop to end the bot, /motivate'\
               ' to get a diffrent motivational quote everytime you request for it'\
-              ' or /joke to get a joke everytime you request for it')
+              ' or /joke to get a joke everytime you request for it'\
+              ' you even can request for /news to get an interesting news.')
 
         when '/stop'
           bot.api.send_message(chat_id: message.chat.id, text: "Bye, #{message.from.first_name}", date: message.date)
@@ -33,6 +35,11 @@ class Bot
           values = Joke.new
           value = values.request
           bot.api.send_message(chat_id: message.chat.id, text: value['joke'].to_s, date: message.date)
+
+        when '/news'
+          values = News.new
+          value = values.random
+          bot.api.send_message(chat_id: message.chat.id, text: value['news'].to_s, date: message.date)
 
         else
           bot.api.send_message(chat_id: message.chat.id,
