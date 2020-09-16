@@ -8,7 +8,7 @@ Dotenv.load('./.env')
 
 class Bot
   def initialize
-    token = ENV['API_TOKEN']
+    token = ENV['API_TOKEN_BOT']
     Telegram::Bot::Client.run(token) do |bot|
       bot.listen do |message|
         case message.text
@@ -33,7 +33,6 @@ class Bot
           values = Joke.new
           value = values.request
           bot.api.send_message(chat_id: message.chat.id, text: value['joke'].to_s, date: message.date)
-
         else
           bot.api.send_message(chat_id: message.chat.id,
                                text: "Invalid entry, #{message.from.first_name},"\

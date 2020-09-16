@@ -3,10 +3,10 @@
 require 'telegram/bot'
 require 'net/http'
 require 'json'
-require_relative 'bot.rb'
 
 class Joke
   @values = nil
+  attr_reader :values 
 
   def initialize
     @values = @request
